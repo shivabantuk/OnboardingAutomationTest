@@ -2,6 +2,8 @@ package hometaskLambdaExpressions;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class rotationsOfEachOther {
     public static void main(String[] args) {
@@ -22,5 +24,13 @@ public class rotationsOfEachOther {
         else  {
             System.out.println("not rotationsOfEachOther");
         }
+
+        //Lambda Expression
+        String Lambdaname1 = "listen";
+        String Lambdaname2 = "slient";
+
+
+
+
     }
 }
