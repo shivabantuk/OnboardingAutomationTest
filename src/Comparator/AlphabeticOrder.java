@@ -23,6 +23,7 @@ public class AlphabeticOrder {
 
             names1.sort((a,b)-> a.compareTo(b));
           System.out.println(names1);
+
         }
 
     }
