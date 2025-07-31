@@ -10,7 +10,10 @@ public class SavingAccount extends Account{
         this.interestRate = interestRate;
     }
     public void addInterest(){
-        balance += balance * interestRate;
+        double interest = balance * interestRate/100;
+        balance += interest;
+        System.out.println("Interest Rate is " + interestRate);
+        System.out.println("Interest is " + interest);
 
     }
 }
