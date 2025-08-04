@@ -18,7 +18,6 @@ public class Main {
         List<Toppings> selectedToppings = Arrays.asList(corn, mushroom);
         Pizza pizza = new Pizza(soft, selectedToppings);
         System.out.print("Total cost of pizza: $" + pizza.getCost());
-
     }
 
 }

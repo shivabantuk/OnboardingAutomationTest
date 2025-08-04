@@ -17,13 +17,6 @@ public class AlphabeticOrder {
           });
           System.out.println(names);
 
-          //Lambda Expression
-
-            List<String> names1 = Arrays.asList("Shiva","Kumar","Bantu");
-
-            names1.sort((a,b)-> a.compareTo(b));
-          System.out.println(names1);
-
         }
 
     }
