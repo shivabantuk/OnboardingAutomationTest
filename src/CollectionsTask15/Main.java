@@ -10,11 +10,5 @@ public class Main {
         System.out.println(office.getDescSortedBoxesWeight());
         System.out.println(office.getBoxById(1));
         System.out.println(office.getBoxesReceipient("Bob"));
-
-
-
-
-
-
     }
 }

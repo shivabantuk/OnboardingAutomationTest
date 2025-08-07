@@ -25,9 +25,7 @@ public class rotationsOfEachOther {
             System.out.println("not rotationsOfEachOther");
         }
 
-        //Lambda Expression
-        String Lambdaname1 = "listen";
-        String Lambdaname2 = "slient";
+        //
 
 
 
