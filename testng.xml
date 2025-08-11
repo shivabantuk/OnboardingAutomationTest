@@ -1,2 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/ShivaKumarBantu/IdeaProjects/pizzashops/untitled"><classes><class name="APITask02_HomeTask_REST_Functional.Task02_HomeTask_REST_Functional"><methods><include name="webservice"/><include name="comments"/><include name="albums"/><include name="photos"/><include name="todos"/><include name="users"/></methods></class><class name="APITask02_HomeTask_REST_Functional.Task03_HomeTask_REST_Automation"><methods><include name="post"/><include name="get"/><include name="get2"/></methods></class><class name="APITask02_HomeTask_REST_Functional.Task04_HomeTask_REST_Automation"><methods><include name="get1"/><include name="get2"/><include name="get3"/><include name="get4"/><include name="token"/></methods></class><class name="APITask02_HomeTask_REST_Functional.TaskJiraAPIAutomation"><methods><include name="create"/><include name="update"/><include name="delete"/></methods></class><class name="SeleniumWebdriver.Task2_1"><methods><include name="task2"/><include name="task2step2"/><include name="task2step3"/></methods></class><class name="SeleniumWebdriver.Task3_2"><methods><include name="chrome"/></methods></class><class name="SeleniumWebdriver.Task3_2_1"><methods><include name="Edge"/></methods></class><class name="SeleniumWebdriver.Task3_2_2"><methods><include name="FireFox"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ShivaKumarBantu/IdeaProjects/pizzashops/untitled">
+        <classes>
+            <class name="APITask02_HomeTask_REST_Functional.Task02_HomeTask_REST_Functional">
+                <methods>
+                    <include name="webservice"/>
+                    <include name="comments"/>
+                    <include name="albums"/>
+                    <include name="photos"/>
+                    <include name="todos"/>
+                    <include name="users"/>
+                </methods>
+            </class>
+            <class name="APITask02_HomeTask_REST_Functional.Task03_HomeTask_REST_Automation">
+                <methods>
+                    <include name="post"/>
+                    <include name="get"/>
+                    <include name="get2"/>
+                </methods>
+            </class>
+            <class name="APITask02_HomeTask_REST_Functional.Task04_HomeTask_REST_Automation">
+                <methods>
+                    <include name="get1"/>
+                    <include name="get2"/>
+                    <include name="get3"/>
+                    <include name="get4"/>
+                    <include name="token"/>
+                </methods>
+            </class>
+
+            <class name="SeleniumWebdriver.Task2_1">
+                <methods>
+                    <include name="task2"/>
+                    <include name="task2step2"/>
+                    <include name="task2step3"/>
+                </methods>
+            </class>
+            <class name="SeleniumWebdriver.Task3_2">
+                <methods>
+                    <include name="chrome"/>
+                </methods>
+            </class>
+            <class name="SeleniumWebdriver.Task3_2_1">
+                <methods>
+                    <include name="Edge"/>
+                </methods>
+            </class>
+            <class name="SeleniumWebdriver.Task3_2_2">
+                <methods>
+                    <include name="FireFox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
