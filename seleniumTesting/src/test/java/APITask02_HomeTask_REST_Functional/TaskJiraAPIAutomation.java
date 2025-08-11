@@ -18,8 +18,7 @@ import static io.restassured.RestAssured.given;
 public class TaskJiraAPIAutomation {
 
 
-    String apitoken = "ATATT3xFfGF09Y_VmHCerX1-9_50awMf2G30MjUEIGm8NrWJmvvPECzqs4VXU3sa-klPXU3MQgdTC7Miumw91JSIILCmbxoXDJboGUx_7WiSJ7RtxlQttZ9QQl8yi6FtQjP54LlJ65axtfejHBupeC2kBOCjMn8Qzq7VCJaz8Wq-TUhxVrxrVBc=91DF1078";
-
+    String apitoken;
     @Test(priority = 1)
     public void create(ITestContext context) throws FileNotFoundException {
         File f = new File("C:\\Users\\ShivaKumarBantu\\IdeaProjects\\pizzashops\\seleniumTesting\\src\\test\\java\\APITask02_HomeTask_REST_Functional\\taskjira.json");
