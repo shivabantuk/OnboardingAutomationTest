@@ -1,0 +1,34 @@
+public class task5{
+public static void main(String[]  args)
+{
+//getlist
+
+Response getlist = given().when().get("/employees").then().statuscode(200).statuscode("OK").statusline(containsString("OK")).contentType("application/json".extract().response();
+int count = getlist.jsonpath().getlist("$").size();
+
+
+//2
+String employepayload = { "name":"shiva","salary":5000, "age": 26};
+Response createresponse = given().header("Content_type", "application/json").body(employepayload).post("/employees").then().status.code(201).contentType("application/json").extract.response();
+int employeeid  = creatersponse.jsonpath().getInt("id");
+Response getlist = given().get("/employee").then().extract().response();
+int countAfterCreate = getList.jsonpath().getlits("$").size();
+Assert.assertEquals(initialcount+1, countAfterCreate);
+
+//3
+
+Response getemployee = given().pathParam("id", employeeId)
+when().get("/employees/{id}").then().statuscode(200).contentype("application/json").extract().response();
+
+Assert.assertEquals("john", getEmployee.jsonPath().getString("name"));
+Assert.assertEquals("50000", getEmployee.jsonPath().getInt("salary"));
+
+Assert.assertEquals("30", getEmployee.jsonPath().getInt("age"));
+
+
+
+}
+
+}
+
+}
