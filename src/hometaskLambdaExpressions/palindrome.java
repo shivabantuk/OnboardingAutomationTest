@@ -43,13 +43,10 @@ public class palindrome {
         num2.sort(Comparator.reverseOrder());
         System.out.println(num2);
         //6
-        List<String> characters = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h");
+        List<String> characters = Arrays.asList("a", "b", "c", "e", "d", "f", "g", "h");
         characters.sort(Comparator.naturalOrder());
         System.out.println(characters);
     }
-
-
-
 }
 
 

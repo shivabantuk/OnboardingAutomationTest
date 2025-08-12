@@ -8,7 +8,9 @@ public class PrintProduct {
     public static Consumer<Product> getPrinter(String printParameter) {
         if ("file".equals(printParameter)) {
             return product -> {
-                try (FileWriter writer = new FileWriter("product.txt", true)) {
+
+
+                try (FileWriter writer = new FileWriter("C:\\Users\\ShivaKumarBantu\\IdeaProjects\\pizzashops\\src\\Java8Task04_Hometask_Consumer_Supplier\\product.txt", true)) {
                     try {
                         writer.write(product.toString() + System.lineSeparator());
                     } catch (IOException e) {

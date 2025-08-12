@@ -32,5 +32,5 @@ public class Product {
 
     BiFunction<String, Double, Product> createProduct = (name, price) -> new Product(name, price, "General", "A");
 
-    BiFunction<Product, Integer, Double> createFunction = (product, quantity) -> product.getPrice() * quantity;
+    //BiFunction<Product, Integer, Double> createFunction = (product, quantity) -> product.getPrice() * quantity;
 }

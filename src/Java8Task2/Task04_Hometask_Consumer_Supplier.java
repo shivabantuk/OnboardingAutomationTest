@@ -29,4 +29,5 @@ public class Task04_Hometask_Consumer_Supplier {
                 throw new RuntimeException(e);
             }
 
-        }};}}
+        }
+        };}}

@@ -59,11 +59,11 @@ public class Task5 {
                 .statusCode(201)
                 .extract().response();
 
-
     }
 
     @Test(dependsOnMethods = "create")
     public void verify(ITestContext context) {
+
 
 
         Response rs = given()
@@ -77,13 +77,15 @@ public class Task5 {
             if (j.equals("12345")) {
                 System.out.println(jsonArray.getJSONObject(i).getString("jobTitleName").toString());
 
-                System.out.println(jsonArray.getJSONObject(i).getString("firstName").toString());
+                String s = jsonArray.getJSONObject(i).getString("firstName").toString();
+                Assert.assertEquals(s, "Romin");
                 System.out.println(jsonArray.getJSONObject(i).getString("lastName").toString());
                 System.out.println(jsonArray.getJSONObject(i).getString("preferredFullName"));
                 System.out.println(jsonArray.getJSONObject(i).getString("employeeCode"));
                 System.out.println(jsonArray.getJSONObject(i).getString("region"));
                 System.out.println(jsonArray.getJSONObject(i).getString("phoneNumber"));
                 System.out.println(jsonArray.getJSONObject(i).getString("emailAddress"));
+
             }
 
         }

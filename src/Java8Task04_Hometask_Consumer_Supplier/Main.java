@@ -15,7 +15,7 @@ public class Main {
         products.forEach(print);
 
         //2
-        Consumer<Product> gradeupdate = ConsumerToUpdateGrade.getGradeUpdate();
+       Consumer<Product> gradeupdate = ConsumerToUpdateGrade.getGradeUpdate();
         products.forEach(gradeupdate);
         System.out.println("Updategrades");
         products.forEach(print);

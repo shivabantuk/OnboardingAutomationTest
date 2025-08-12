@@ -1,7 +1,9 @@
 package Java8Task05_Hometask_BiFunctionalInterfaces;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.BiFunction;
 
 public class Main {
@@ -18,15 +20,14 @@ public class Main {
         BiFunction<Product, Integer, Double> costfunction = (product, quantity) -> product.getPrice() * quantity;
 
 
-        //Bifuntion -> 2
+        //BiFunction ->2
         double cartprice = 0.0;
-        for(Map.Entry<Product, Integer> entry : cart.entrySet()) {
+        Set s = cart.entrySet();
+        Iterator i = s.iterator();
+        while (i.hasNext()) {
+            Map.Entry<Product, Integer> entry = (Map.Entry<Product, Integer>) i.next();
             cartprice += costfunction.apply(entry.getKey(), entry.getValue());
         }
         System.out.println(cartprice);
-
-
-
-
     }
 }
