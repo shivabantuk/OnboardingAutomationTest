@@ -52,6 +52,7 @@
                     <include name="FireFox"/>
                 </methods>
             </class>
+            <class name = "TestNG.Task2"/>
         </classes>
     </test>
 </suite>
